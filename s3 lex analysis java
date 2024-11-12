@@ -50,54 +50,11 @@ int yywrap(){
 
 
 
+/*flex devesh.l
 
+gcc lex.yy.c
 
-(Microsoft Windows [Version 10.0.22631.4249]
-(c) Microsoft Corporation. All rights reserved.
+a.exe
 
-C:\Users\HP\OneDrive\Desktop\spos practical\lexical>flex devesh.l
-
-C:\Users\HP\OneDrive\Desktop\spos practical\lexical>gcc lex.yy.c
-devesh.l:28:1: warning: return type defaults to 'int' [-Wimplicit-int]
- main(int argc, char **argv) {
- ^~~~
-
-C:\Users\HP\OneDrive\Desktop\spos practical\lexical>a.exe
-10
-10 : is a Number
-
-public class Helloworld {public static void main(string args[]){int i = 0 ;system.out.println("Hello World !");}}
-public : is an Access specifier
- class : is a Keyword
- Helloworld : is a Class-Name
- { : is a Bracket
-public : is an Access specifier
- static : is a Keyword
- void : is a Keyword
- main : is a Keyword
-( : is a Bracket
-string : is a Variable
- args : is a Variable
-[ : is a Bracket
-] : is a Bracket
-) : is a Bracket
-{ : is a Bracket
-int : is a DataType
- i : is a Variable
- = : is an Operator
- 0 : is a Number
- ; : is a Delimiter
-system : is a Variable
-. : is a Delimiter
-out : is a Keyword
-. : is a Delimiter
-println : is a Keyword
-( : is a Bracket
-"Hello World !" : is a Quote
-) : is a Bracket
-; : is a Delimiter
-} : is a Bracket
-} : is a Bracket
-
-
-)
+public class morning {public static void main(string args[]){int i = 0 ;system.out.println("Morning !");}}
+*/
