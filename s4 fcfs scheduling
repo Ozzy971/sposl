@@ -58,10 +58,7 @@ if __name__ == "__main__":
 
 #Select Scheduling Algorithm:
 #1. FCFS
-#2. Priority Scheduling
-#3. Round Robin
-#4. SJF Preemptive
-#5. Exit
+#2. Exit
 #Enter your choice: 1
 #Enter the number of processes (up to 6): 5
 #Enter burst times:
