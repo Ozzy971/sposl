@@ -1,4 +1,4 @@
-#pass1 macro.
+//pass1 macro.
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -113,70 +113,71 @@ public class MacroPass1 {
 	}
 
 }
-#macro_input.txt:
-#MACRO
-#A1 &X, &Y, &R=AREG
-#MOVER &R, &X
-#ADD &R, &Y
-#MOVEM &R, &X
-#MEND
-#MACRO
-#INCR_M &MEM_VAL= &INCR_VAL= &REG=
-#MOVER &REG, &MEM_VAL
-#ADD &REG, &INCR_VAL
-#MOVEM &REG, &MEM_VAL
-#MEND
-#MACRO
-#INCR &MEM_VAL, &INCR_VAL, &REG
-#MOVER &REG, &MEM_VAL
-#ADD &REG, &INCR_VAL
-#MOVEM &REG, &MEM_VAL
-#MEND
-#START
-#A1 10, 20
-#INCR_M MEMVAL=A, INCR_VAL=B, REG=AREG
-#INCR A, B, AREG
-#END
 
-#mdt.txt:
-#MOVER	(P,3)	(P,1)	
-#ADD	(P,3)	(P,2)	
-#MOVEM	(P,3)	(P,1)	
-#MEND
-#MOVER	(P,3)	(P,1)	
-#ADD	(P,3)	(P,2)	
-#MOVEM	(P,3)	(P,1)	
-#MEND
-#MOVER	(P,3)	(P,1)	
-#ADD	(P,3)	(P,2)	
-#MOVEM	(P,3)	(P,1)	
-#MEND
+//macro_input.txt:
+//MACRO
+//A1 &X, &Y, &R=AREG
+//MOVER &R, &X
+//ADD &R, &Y
+//MOVEM &R, &X
+///MEND
+//MACRO
+//INCR_M &MEM_VAL= &INCR_VAL= &REG=
+//MOVER &REG, &MEM_VAL
+//ADD &REG, &INCR_VAL
+//MOVEM &REG, &MEM_VAL
+//MEND
+//MACRO
+//INCR &MEM_VAL, &INCR_VAL, &REG
+//MOVER &REG, &MEM_VAL
+//ADD &REG, &INCR_VAL
+//MOVEM &REG, &MEM_VAL
+//MEND
+//START
+//A1 10, 20
+//INCR_M MEMVAL=A, INCR_VAL=B, REG=AREG
+//INCR A, B, AREG
+//END
 
-#mnt.txt:
-#A1	2	1	1	1
-#INCR_M	0	3	5	2
-#INCR	3	0	9	4
+//mdt.txt:
+//MOVER	(P,3)	(P,1)	
+//ADD	(P,3)	(P,2)	
+//MOVEM	(P,3)	(P,1)	
+//MEND
+//MOVER	(P,3)	(P,1)	
+//ADD	(P,3)	(P,2)	
+//MOVEM	(P,3)	(P,1)	
+//MEND
+//MOVER	(P,3)	(P,1)	
+//ADD	(P,3)	(P,2)	
+//MOVEM	(P,3)	(P,1)	
+//MEND
 
-#pntab.txt:
-#A1:	X	Y	R	
-#INCR_M:	MEM_VAL	INCR_VAL	REG	
-#INCR:	MEM_VAL	INCR_VAL	REG	
+//mnt.txt:
+//A1	2	1	1	1
+//INCR_M	0	3	5	2
+//INCR	3	0	9	4
 
-#intermediate.txt:
-#START
-#A1 10, 20
-#INCR_M MEMVAL=A, INCR_VAL=B, REG=AREG
-#INCR A, B, AREG
-#END
+//pntab.txt:
+//A1:	X	Y	R	
+//INCR_M:	MEM_VAL	INCR_VAL	REG	
+//INCR:	MEM_VAL	INCR_VAL	REG	
 
-#kpdt.txt
-#R	AREG
-#MEM_VAL	-
-#INCR_VAL	-
-#REG	-
+//intermediate.txt:
+//START
+//A1 10, 20
+//INCR_M MEMVAL=A, INCR_VAL=B, REG=AREG
+//INCR A, B, AREG
+//END
+
+//kpdt.txt
+//R	AREG
+//MEM_VAL	-
+//INCR_VAL	-
+//REG	-
 
 
-#pass 2:
+//pass 2:
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -327,17 +328,17 @@ public class MacroPass2 {
  }
 } 
 
-#OUTPUT:
-#START
-#+MOVER	AREG	10	
-#+ADD	AREG	20	
-#+MOVEM	AREG	10	
-#+MOVER	AREG	-	
-#+ADD	AREG	B	
-#+MOVEM	AREG	-	
-#+MOVER	AREG	A	
-#+ADD	AREG	B	
-#+MOVEM	AREG	A	
-#END
+//OUTPUT:
+//START
+//+MOVER	AREG	10	
+//+ADD	AREG	20	
+//+MOVEM	AREG	10	
+//+MOVER	AREG	-	
+//+ADD	AREG	B	
+//+MOVEM	AREG	-	
+//+MOVER	AREG	A	
+//+ADD	AREG	B	
+//+MOVEM	AREG	A	
+/END
 
 
